@@ -23,25 +23,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Charlie Haviland's Personal Website" />
 
-    <script>
-      $(document).ready(function() {
-        jQuery(function() {
-				  jQuery('a[href*="#"]:not([href="#"])').click(function() {
-				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				      var target = jQuery(this.hash);
-				      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
-				      if (target.length) {
-				        jQuery('html, body').animate({
-				          scrollTop: target.offset().top - 300
-				        }, 1000);
-				        return false;
-				      }
-				    }
-				  });
-				});
-        $('body').scrollspy({target:'#navbar',offset:300});
-      });
-    </script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
