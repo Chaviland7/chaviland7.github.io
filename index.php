@@ -21,6 +21,8 @@
 		<link rel="shortcut icon" href="">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Charlie Haviland's Personal Website" />
+
     <script>
       $(document).ready(function() {
         jQuery(function() {
