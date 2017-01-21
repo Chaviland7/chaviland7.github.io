@@ -7,9 +7,16 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+body.scrolled {
+  background-image: url(../images/piz_top.jpg);
+}
 div.row {
   margin: 0;
 }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+  font-family: 'Open Sans', sans-serif !important;
+}
+/* Footer */
 footer {
   background-color: #4a4a4a;
   color: white;
@@ -39,18 +46,6 @@ div.icons a i {
 div.icons a:hover i {
   opacity: 1;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
-  font-family: 'Open Sans', sans-serif !important;
-}
-div.transparent {
-  color: white;
-  text-align: center;
-  background-color: transparent !important;
-}
-div.row.home-page {
-  background-color: white;
-  height: 400px;
-}
 /* Navbar */
 nav.navbar.navbar-default {
   background: transparent;
@@ -61,8 +56,54 @@ div.container-fluid {
 }
 nav.navbar-default ul.nav.navbar-nav li a {
   color: white;
+  border-radius: 5px;
+  margin-right: 15px;
 }
 nav.navbar-default ul.nav.navbar-nav li.active a {
   color: black;
   background: white;
+}
+nav.navbar-default ul.nav.navbar-nav li a:hover {
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: -1px;
+  margin-right: 14px;
+}
+ul.navbar-right {
+  margin: 0;
+}
+/* Home Page */
+div.transparent {
+  color: white;
+  text-shadow: rgba(0,0,0,0.75) 3px 3px 10px;
+  background-color: transparent !important;
+}
+div.row.home-page {
+  background-color: white;
+  height: 400px;
+  text-align: center;
+}
+div.home-page.home h1 {
+  font-size: 55px;
+}
+#caption {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+#caption p {
+  margin: 0;
+}
+#arrow_container {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  cursor: pointer;
+}
+#arrow .glyphicon {
+  font-size: 50px;
+  cursor: pointer;
+}
+#arrow a {
+  color: white;
 }
