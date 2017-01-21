@@ -1,0 +1,68 @@
+html {
+
+}
+body {
+  padding-top: 60px;
+  background-image: url(../images/piz_top.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+div.row {
+  margin: 0;
+}
+footer {
+  background-color: #4a4a4a;
+  color: white;
+  text-align: center;
+}
+div.footer h1 {
+  margin: 40px 0;
+}
+div.footer h4 {
+  margin: 25px 0;
+}
+footer hr {
+  border: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 0;
+  width: 75%;
+}
+.quote {
+  opacity: 0.5;
+}
+div.icons a i {
+  font-size: 70px;
+  opacity: 0.5;
+  margin: 0 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+div.icons a:hover i {
+  opacity: 1;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+  font-family: 'Open Sans', sans-serif !important;
+}
+div.transparent {
+  color: white;
+  text-align: center;
+  background-color: transparent !important;
+}
+div.row.home-page {
+  background-color: white;
+  height: 400px;
+}
+/* Navbar */
+nav.navbar.navbar-default {
+  background: transparent;
+  color: white;
+}
+div.container-fluid {
+  padding: 5px 15px;
+}
+nav.navbar-default ul.nav.navbar-nav li a {
+  color: white;
+}
+nav.navbar-default ul.nav.navbar-nav li.active a {
+  color: black;
+  background: white;
+}
