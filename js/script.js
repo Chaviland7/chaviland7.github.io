@@ -1,12 +1,12 @@
 function positionStuff() {
-  jQuery('.row.home-page.home').css('height',jQuery(window).height() - 50);
+  jQuery('.row.home-page.home').css('height',$(window).height() - 50);
   jQuery('#arrow_container').css('top',($(window).height() - 100) - ($(window).scrollTop() / 1.125));//correct height
-  jQuery('#arrow_container').css('left',(jQuery(window).width()/2) - (jQuery('#arrow_container').width()/2));//correct centering
+  jQuery('#arrow_container').css('left',($(window).width()/2) - (jQuery('#arrow_container').width()/2));//correct centering
 
   $('#Home h1').css('left',($(window).width()/2) - ($('#Home h1').width()/2));
   $('#Home h3').css('left',($(window).width()/2) - ($('#Home h3').width()/2));
-  $('#Home h1').css("top", 200 - ($(window).scrollTop() / 2.75));
-  $('#Home h3').css("top", 350 - ($(window).scrollTop() / 1.85));
+  $('#Home h1').css("top", 200/703*$(window).height() - ($(window).scrollTop() / 2.75));
+  $('#Home h3').css("top", 350/703*$(window).height() - ($(window).scrollTop() / 1.85));
   var fromTopPx = parseInt(jQuery('.home-page.home').css('height').replace('px',''))+250; // distance to trigger
   var scrolledFromtop = jQuery(window).scrollTop(); //actual distance scrolled from the top of the page
   if(scrolledFromtop > fromTopPx){

@@ -84,6 +84,10 @@ ul.navbar-right {
 div#Home {
   height: 800px;
 }
+div#Home h1,
+div#Home h3 {
+  z-index: -1;
+}
 div.transparent {
   color: white !important;
   text-shadow: rgba(0,0,0,1) 2px 2px 5px;
