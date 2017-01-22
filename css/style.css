@@ -88,6 +88,26 @@ div#Home h1,
 div#Home h3 {
   z-index: -1;
 }
+img#headshot {
+  border: 10px solid white;
+  border-radius: 30em;
+}
+div.row.home-page p {
+  font-size: 16px;
+  line-height: 24px;
+}
+div.row.home-page .left h4 {
+  margin-bottom: 0;
+  margin-top: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+div.row.home-page .right {
+  text-align: right;
+}
+div.row.home-page .left {
+  text-align: left;
+}
 div.transparent {
   color: white !important;
   text-shadow: rgba(0,0,0,1) 2px 2px 5px;
@@ -95,12 +115,22 @@ div.transparent {
 }
 div.row.home-page {
   background-color: white;
-  height: 400px;
   text-align: center;
   color: rgb(100,100,100);
+  padding: 20px 12.5%;
+}
+div.row.home-page.transparent {
+  padding: 0;
+  height: 400px;
 }
 div.home-page.home h1 {
   font-size: 55px;
+}
+div.row.home-page:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+hr {
+  border-color: #cacaca;
 }
 #caption {
   position: absolute;
