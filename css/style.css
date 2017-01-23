@@ -153,3 +153,36 @@ hr {
 #arrow a {
   color: white;
 }
+/* Education */
+div.school,
+div.job {
+  padding-bottom: 50px;
+}
+div.school h3,
+div.school h4,
+div.job h3,
+div.job h4 {
+  margin: 0;
+}
+div.school h3,
+div.job h3 {
+  font-size: 21px;
+}
+div.school div:nth-child(1),
+div.job div:nth-child(1) {
+  border-right: 1px solid black;
+}
+div.school div:nth-child(1) p,
+div.job div:nth-child(1) p {
+  margin-bottom: 15px;
+}
+div.school div:nth-child(2),
+div.job div:nth-child(2) {
+  text-align: left;
+}
+div.school div:nth-child(2) h4,
+div.job div:nth-child(2) h4 {
+  font-style: italic;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
