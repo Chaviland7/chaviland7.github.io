@@ -167,10 +167,14 @@ div.job h4 {
 div.school h3,
 div.job h3 {
   font-size: 21px;
+  font-weight: bold;
 }
-div.school div:nth-child(1),
-div.job div:nth-child(1) {
-  border-right: 1px solid black;
+div.school div:nth-child(2),
+div.job div.job-title {
+  border-left: 1px solid black;
+}
+div.job div.job-title {
+  padding: 0;
 }
 div.school div:nth-child(1) p,
 div.job div:nth-child(1) p {
@@ -181,8 +185,27 @@ div.job div:nth-child(2) {
   text-align: left;
 }
 div.school div:nth-child(2) h4,
-div.job div:nth-child(2) h4 {
+div.job div.job-title h4,
+div.job div.job-title h5 {
   font-style: italic;
+  font-weight: bold;
   margin-top: 3px;
   margin-bottom: 20px;
+}
+div.job-title h5 {
+  text-align: right;
+}
+div.school ul,
+div.job ul {
+  padding-left: 20px;
+}
+div.school ul li,
+div.job ul li {
+  margin-bottom: 3px;
+  font-size: 16px;
+}
+
+/* Projects */
+div.project img {
+  max-width: 100%;
 }

@@ -6,7 +6,7 @@ function positionStuff() {
   $('#Home h1').css('left',($(window).width()/2) - ($('#Home h1').width()/2));
   $('#Home h3').css('left',($(window).width()/2) - ($('#Home h3').width()/2));
   $('#Home h1').css("top", 200/703*$(window).height() - ($(window).scrollTop() / 2.75));
-  $('#Home h3').css("top", 350/703*$(window).height() - ($(window).scrollTop() / 1.85));
+  $('#Home h3').css("top", 375/703*$(window).height() - ($(window).scrollTop() / 1.85));
   var fromTopPx = parseInt(jQuery('.home-page.home').css('height').replace('px',''))+250; // distance to trigger
   var scrolledFromtop = jQuery(window).scrollTop(); //actual distance scrolled from the top of the page
   if(scrolledFromtop > fromTopPx){
@@ -17,6 +17,9 @@ function positionStuff() {
       jQuery('nav.navbar-default').removeClass('scrolled');
   }
 }
+/*$(function() {
+  $(document).tooltip();
+});*/
 $(document).ready(function() {
   $("#arrow_container").css("opacity", 1 - $(window).scrollTop() / 600);
 	$("#Home h1, #Home h3").css("opacity", 1 - $(window).scrollTop() / 800);
