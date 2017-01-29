@@ -34,6 +34,10 @@ $(document).ready(function() {
   /* Smooth Scrolling to a tags */
   jQuery(function() {jQuery('a[href*="#"]:not([href="#"])').click(function() {if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {var target = jQuery(this.hash);target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');if (target.length) {jQuery('html, body').animate({scrollTop: target.offset().top - 60}, 1000);return false;}}});});
   $('body').scrollspy({target:'#navbar',offset:60});
+  var age = Math.abs(new Date().getTime() - new Date("10/21/1996").getTime());
+  $('#age').text(Math.floor(age/1000/60/60/24/365) + ' Years')
+});
+$(window).on('load',function(e) {
   $('#music_title').affix({
     offset: {
       top: $('#music_title').offset().top - 100,
@@ -50,9 +54,7 @@ $(document).ready(function() {
       }
     }
   });
-  var age = Math.abs(new Date().getTime() - new Date("10/21/1996").getTime());
-  $('#age').text(Math.floor(age/1000/60/60/24/365) + ' Years')
-});
+})
 jQuery(window).resize(function() {
   positionStuff();
   //$('#music_title').affix('checkPosition')
