@@ -80,7 +80,7 @@ nav.navbar-default ul.nav.navbar-nav li a:hover {
 ul.navbar-right {
   margin: 0;
 }
-li.visible-sm-down {
+.visible-sm-down {
   display: none;
 }
 /* Home Page */
@@ -218,6 +218,12 @@ div.job ul a:hover {
   text-decoration: none;
 }
 
+/* Skills */
+#Skills .skills_container {
+  width: 75%;
+  margin: auto;
+}
+
 /* Projects */
 #Projects div.project {
   padding-bottom: 15px;
@@ -227,10 +233,10 @@ div.project img {
 }
 
 .visible-sm-down {
-  display: none;
+  display: none !important;
 }
 
-.img_hoverbox, .img_hoverbox * { box-sizing: border-box; } .img_hoverbox { position: relative; display: inline-block; overflow: hidden; max-width: 100%; height: auto; box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 10px; } .img_hoverbox img { max-width: 100%; } .img_hoverbox .hvrbox-layer_bottom { display: block; } .img_hoverbox .hvrbox-layer_top { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); color: #fff; padding: 5px; -moz-transition: all 0.4s ease-in-out 0s; -webkit-transition: all 0.4s ease-in-out 0s; -ms-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s; } .img_hoverbox:hover .hvrbox-layer_top, .img_hoverbox.active .hvrbox-layer_top { opacity: 1; } .img_hoverbox .hvrbox-text { text-align: center; font-size: 18px; display: inline-block; position: absolute; top: 50%; left: 50%; width: 90%; -moz-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } .img_hoverbox .hvrbox-text p { text-align: justify; font-size: 14px !important; } .img_hoverbox a { color: inherit; } .img_hoverbox a:hover { color: inherit; text-decoration: none; xxfont-style: italic; } .img_hoverbox .hvrbox-text_mobile { font-size: 15px; border-top: 1px solid rgb(179, 179, 179); border-top: 1px solid rgba(179, 179, 179, 0.7); margin-top: 5px; padding-top: 2px; display: none; } .img_hoverbox.active .hvrbox-text_mobile { display: block; }
+.img_hoverbox, .img_hoverbox * { box-sizing: border-box; } .img_hoverbox { position: relative; display: inline-block; overflow: hidden; max-width: 100%; height: auto; box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 10px; } .img_hoverbox img { max-width: 100%; } .img_hoverbox .hvrbox-layer_bottom { display: block; } .img_hoverbox .hvrbox-layer_top { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75); color: #fff; padding: 5px; -moz-transition: all 0.4s ease-in-out 0s; -webkit-transition: all 0.4s ease-in-out 0s; -ms-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s; } .img_hoverbox:hover .hvrbox-layer_top, .img_hoverbox.active .hvrbox-layer_top { opacity: 1; } .img_hoverbox .hvrbox-text { text-align: center; font-size: 18px; display: inline-block; position: absolute; top: 50%; left: 50%; width: 90%; -moz-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } .img_hoverbox .hvrbox-text p { text-align: justify; font-size: 14px !important; line-height: 18px !important;} .img_hoverbox a { color: inherit; } .img_hoverbox a:hover { color: inherit; text-decoration: none; xxfont-style: italic; } .img_hoverbox .hvrbox-text_mobile { font-size: 15px; border-top: 1px solid rgb(179, 179, 179); border-top: 1px solid rgba(179, 179, 179, 0.7); margin-top: 5px; padding-top: 2px; display: none; } .img_hoverbox.active .hvrbox-text_mobile { display: block; }
 
 div.hrvbox-text p {
   text-align: left;
@@ -310,6 +316,13 @@ div.hrvbox-text p {
   }
   div.job div.job-title h4 {
     margin-bottom: 0;
+  }
+  .img_hoverbox .hvrbox-text p {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+  #Interests div.albums_container img {
+      max-width: calc(50% - 5px);
   }
   .transparent .quote {
     margin-top: 60px;

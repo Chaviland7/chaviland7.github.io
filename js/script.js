@@ -38,11 +38,24 @@ $(document).ready(function() {
   $('#age').text(Math.floor(age/1000/60/60/24/365) + ' Years')
 });
 $(window).on('load',function(e) {
+  /*$('#Interests .row h2').each(function() {
+    var id = "#"+$(this).attr('id');
+    var end_id = "#end_"+$(this).attr('id');
+    console.log(id);
+    console.log($(id).offset().top - 100);
+    console.log($(document).height() - $(end_id).offset().top + 20);
+    $(id).affix({
+      top: $(id).offset().top - 100,
+      bottom:function() {
+        return (this.bottom = $(document).height() - $(end_id).offset().top + 20)
+      }
+    });
+  });*/
   $('#music_title').affix({
     offset: {
       top: $('#music_title').offset().top - 100,
       bottom: function () {
-        return (this.bottom = $(document).height() - $('#end_music').offset().top + 20)
+        return (this.bottom = $(document).height() - $('#end_music_title').offset().top + 20)
       }
     }
   });
@@ -50,7 +63,15 @@ $(window).on('load',function(e) {
     offset: {
       top: $('#cars_title').offset().top - 100,
       bottom: function () {
-        return (this.bottom = $(document).height() - $('#end_cars').offset().top + 20)
+        return (this.bottom = $(document).height() - $('#end_cars_title').offset().top + 20)
+      }
+    }
+  });
+  $('#favorites_title').affix({
+    offset: {
+      top: $('#favorites_title').offset().top - 100,
+      bottom: function () {
+        return (this.bottom = $(document).height() - $('#end_favorites_title').offset().top + 20)
       }
     }
   });
