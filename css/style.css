@@ -220,8 +220,62 @@ div.job ul a:hover {
 
 /* Skills */
 #Skills .skills_container {
-  width: 75%;
+  width: 80%;
   margin: auto;
+}
+#spoken_languages {
+  width: 60%;
+  margin:auto;
+}
+#spoken_languages h4 {
+  font-weight: bold;
+}
+#spoken_languages p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+}
+#cs_languages .skill_bar {
+  text-align: left;
+  padding: 4px 17px;
+  margin: 2px 0;
+  background: #59C0E1;
+  color: white;
+  border-radius: 99em;
+}
+#cs_languages .skill_bar h4 {
+  display: inline-block;
+}
+#cs_languages .skill_bar .num {
+  float: right;
+  margin-top: 9px;
+}
+#cs_languages .skill_bar.nine {
+  width:90%;
+}
+#cs_languages .skill_bar.eight {
+  width:80%;
+}
+#cs_languages .skill_bar.seven {
+  width:70%;
+}
+#cs_languages .skill_bar.six {
+  width:60%;
+}
+#cs_languages .skill_bar.five {
+  width:50%;
+}
+#cs_languages .skill_bar.four {
+  width:40%;
+}
+#cs_languages .skill_bar.three {
+  width:30%;
+}
+#cs_languages .skill_bar.two {
+  width:20%;
+}
+#cs_languages .skill_bar.one {
+  width:10%;
 }
 
 /* Projects */
