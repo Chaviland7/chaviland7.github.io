@@ -87,9 +87,6 @@ ul.navbar-right {
 div#Home {
   height: 800px;
 }
-div#Hoe h1 {
-  margin-top: 0;
-}
 div#Home h1,
 div#Home h3 {
   z-index: -1;
@@ -235,7 +232,7 @@ div.job ul a:hover {
   font-size: 14px;
   line-height: 18px;
 }
-#cs_languages .skill_bar {
+.skill_bars .skill_bar {
   text-align: left;
   padding: 4px 17px;
   margin: 2px 0;
@@ -243,41 +240,21 @@ div.job ul a:hover {
   color: white;
   border-radius: 99em;
 }
-#cs_languages .skill_bar h4 {
+.skill_bars .skill_bar h4 {
   display: inline-block;
 }
-#cs_languages .skill_bar .num {
+.skill_bars .skill_bar .num {
   float: right;
   margin-top: 9px;
 }
-#cs_languages .skill_bar.nine {
-  width:90%;
-}
-#cs_languages .skill_bar.eight {
-  width:80%;
-}
-#cs_languages .skill_bar.seven {
-  width:70%;
-}
-#cs_languages .skill_bar.six {
-  width:60%;
-}
-#cs_languages .skill_bar.five {
-  width:50%;
-}
-#cs_languages .skill_bar.four {
-  width:40%;
-}
-#cs_languages .skill_bar.three {
-  width:30%;
-}
-#cs_languages .skill_bar.two {
-  width:20%;
-}
-#cs_languages .skill_bar.one {
-  width:10%;
-}
 
+div.skill_bars .skill_bar .num {
+  opacity: 0;
+  transition: 0.5s;
+}
+div.skill_bars .skill_bar:hover .num {
+  opacity: 1;
+}
 /* Projects */
 #Projects div.project {
   padding-bottom: 15px;
@@ -309,6 +286,7 @@ div.hrvbox-text p {
 #Interests div.albums_container img:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px;
   margin-top: -3px;
+  transition: 0.25s;
 }
 #Interests .affix {
   top: 80px;
