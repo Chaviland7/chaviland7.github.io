@@ -1,3 +1,26 @@
-h1 {
-  xcolor:blue;
+body {
+  margin: 0;
+  font-family: arial;
+}
+div.header {
+  padding: 30px;
+  text-align: center;
+  background-color: #a4ffa4;
+}
+div.entry {
+  padding: 20px 50px;
+}
+div.entry:nth-child(odd) {
+  background-color: rgba(0,0,0,0.1);
+}
+div.entry:nth-child(even) {
+  background-color: rgba(0,0,0,0.05);
+}
+div.entry .title {
+  margin: 0;
+}
+div.entry .date {
+  margin: 0;
+  font-weight: normal;
+  font-style: italic;
 }
