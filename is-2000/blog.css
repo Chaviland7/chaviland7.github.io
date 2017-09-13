@@ -11,7 +11,7 @@ div.entry {
   padding: 20px 50px;
 }
 div.entry:nth-child(odd) {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.025);
 }
 div.entry:nth-child(even) {
   background-color: rgba(0,0,0,0.05);
