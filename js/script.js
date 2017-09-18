@@ -51,6 +51,14 @@ $(window).on('load',function(e) {
       }
     });
   });*/
+  $('#swimming_title').affix({
+    offset: {
+      top: $('#swimming_title').offset().top - 100,
+      bottom: function () {
+        return (this.bottom = $(document).height() - $('#end_swimming_title').offset().top + 20)
+      }
+    }
+  });
   $('#music_title').affix({
     offset: {
       top: $('#music_title').offset().top - 100,
