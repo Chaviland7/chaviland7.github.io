@@ -3,12 +3,12 @@ html {
 }
 body {
   padding-top: 60px;
-  background-image: url(../images/piz_top.jpg);
+  background-image: url(../images/piz-top.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 body.scrolled {
-  background-image: url(../images/gibson_lp.jpg);
+  background-image: url(../images/gibson-lp.jpg);
 }
 div.row {
   margin: 0;

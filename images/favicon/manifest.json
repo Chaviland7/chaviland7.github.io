@@ -1,5 +1,7 @@
 {
  "name": "App",
+ "theme_color": "#8181F7",
+ "short_name": "Charlie",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
