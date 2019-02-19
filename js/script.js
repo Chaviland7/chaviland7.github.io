@@ -5,6 +5,7 @@ function positionStuff() {
   $("#arrow_container").css("opacity", 1 - $(window).scrollTop() / 600);
 	$("#Home h1, #Home h3").css("opacity", 1 - $(window).scrollTop() / 800);
   $('#Home h1, #Home h3').css('width', ($(window).width()*.9));
+  /* Position Title & Subtitle */
   $('#Home h1').css('left',($(window).width()/2) - ($('#Home h1').width()/2));
   $('#Home h3').css('left',($(window).width()/2) - ($('#Home h3').width()/2));
   $('#Home h1').css("top", 200/703*$(window).height() - ($(window).scrollTop() / 2.75));
