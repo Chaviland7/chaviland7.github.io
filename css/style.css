@@ -7,6 +7,9 @@ body {
 body.scrolled {
   background-image: url(../images/gibson-lp.jpg);
 }
+.fade {
+  display: none;
+}
 @keyframes FadeInOut {
   0% {
     opacity: 0;
