@@ -64,6 +64,7 @@ function cycleCaptions(){
     now.fadeOut(speed);
     next.fadeIn(speed);
 }
+
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
