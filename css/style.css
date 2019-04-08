@@ -392,3 +392,12 @@ div.hrvbox-text p {
     max-width: 90%;
   }
 }
+
+
+div.pa img {
+  max-width: 100%;
+  margin: auto;
+}
+div.pa.row {
+  margin: 30px 0px;
+}
