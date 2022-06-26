@@ -25,7 +25,6 @@ function positionStuff() {
 function get_tenures() {
   let jobs = $(".row.job")
   jobs.each(function() {
-    let job = $(this)
     let years = $(this).find(".years")[0].innerHTML.split(' - ')
     if (years[1] == "Present") {
       let new_tenure = ''
@@ -60,7 +59,6 @@ function cycleCaptions(){
         now    = captions.filter(':visible'),
         next   = now.next().length ? now.next() : captions.first(),
         speed  = 1500;
-        console.log(captions,now,next)
     now.fadeOut(speed);
     next.fadeIn(speed);
 }
@@ -78,24 +76,11 @@ $(document).ready(function() {
 	});
   /* Smooth Scrolling to a tags */
   jQuery(function() {jQuery('a[href*="#"]:not([href="#"])').click(function() {if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {let target = jQuery(this.hash);target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');if (target.length) {jQuery('html, body').animate({scrollTop: target.offset().top - 60}, 1000);return false;}}});});
-  $('body').scrollspy({target:'#navbar',offset:60});
+  $('body').scrollspy({target:'#navbar',offset:61});
   let age = Math.abs(new Date().getTime() - new Date("10/21/1996").getTime());
   $('#age').text(Math.floor(age/1000/60/60/24/365) + ' Years')
 });
 $(window).on('load',function(e) {
-  /*$('#Interests .row h2').each(function() {
-    let id = "#"+$(this).attr('id');
-    let end_id = "#end_"+$(this).attr('id');
-    console.log(id);
-    console.log($(id).offset().top - 100);
-    console.log($(document).height() - $(end_id).offset().top + 20);
-    $(id).affix({
-      top: $(id).offset().top - 100,
-      bottom:function() {
-        return (this.bottom = $(document).height() - $(end_id).offset().top + 20)
-      }
-    });
-  });*/
   $('#swimming_title').affix({
     offset: {
       top: $('#swimming_title').offset().top - 100,
@@ -131,6 +116,4 @@ $(window).on('load',function(e) {
 })
 jQuery(window).resize(function() {
   positionStuff();
-  //$('#music_title').affix('checkPosition')
-  //$('#cars_title').affix('checkPosition')
 });

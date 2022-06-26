@@ -1,6 +1,5 @@
 body {
   padding-top: 60px;
-  //background-image: url(../images/porto-sunset.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -22,6 +21,9 @@ img.background-image {
   left: 0;
   right: 0;
   z-index: -3;
+}
+img.headshot {
+  max-width: 75%;
 }
 body.scrolled img.background-image,
 body.scrolled p.background-image-caption {
@@ -172,8 +174,8 @@ hr {
   left: 5px;
 }
 #caption.pbang {
-  /width: 100%;
-  /text-align: center;
+  width: 100%;
+  text-align: center;
 }
 #arrow_container {
   width: 100px;
@@ -266,26 +268,16 @@ div.job ul a:hover {
 .skill_bars .skill_bar {
   text-align: left;
   padding: 4px 17px;
-  margin: 2px 0;
+  margin: 5px 0;
   background: #59C0E1;
   color: white;
   border-radius: 99em;
+  text-align: center;
 }
 .skill_bars .skill_bar h4 {
   display: inline-block;
 }
-.skill_bars .skill_bar .num {
-  float: right;
-  margin-top: 9px;
-}
 
-div.skill_bars .skill_bar .num {
-  opacity: 0;
-  transition: 0.5s;
-}
-div.skill_bars .skill_bar:hover .num {
-  opacity: 1;
-}
 /* Projects */
 #Projects div.project {
   padding-bottom: 15px;
@@ -298,7 +290,7 @@ div.project img {
   display: none !important;
 }
 
-.img_hoverbox, .img_hoverbox * { box-sizing: border-box; } .img_hoverbox { position: relative; display: inline-block; overflow: hidden; max-width: 100%; height: auto; box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 10px; } .img_hoverbox img { max-width: 100%; } .img_hoverbox .hvrbox-layer_bottom { display: block; } .img_hoverbox .hvrbox-layer_top { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75); color: #fff; padding: 5px; -moz-transition: all 0.4s ease-in-out 0s; -webkit-transition: all 0.4s ease-in-out 0s; -ms-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s; } .img_hoverbox:hover .hvrbox-layer_top, .img_hoverbox.active .hvrbox-layer_top { opacity: 1; } .img_hoverbox .hvrbox-text { text-align: center; font-size: 18px; display: inline-block; position: absolute; top: 50%; left: 50%; width: 90%; -moz-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } .img_hoverbox .hvrbox-text p { text-align: justify; font-size: 14px !important; line-height: 18px !important;} .img_hoverbox a { color: inherit; } .img_hoverbox a:hover { color: inherit; text-decoration: none; xxfont-style: italic; } .img_hoverbox .hvrbox-text_mobile { font-size: 15px; border-top: 1px solid rgb(179, 179, 179); border-top: 1px solid rgba(179, 179, 179, 0.7); margin-top: 5px; padding-top: 2px; display: none; } .img_hoverbox.active .hvrbox-text_mobile { display: block; }
+.img_hoverbox, .img_hoverbox * { box-sizing: border-box; } .img_hoverbox { position: relative; display: inline-block; overflow: hidden; max-width: 100%; height: auto; box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 10px; } .img_hoverbox img { max-width: 100%; } .img_hoverbox .hvrbox-layer_bottom { display: block; } .img_hoverbox .hvrbox-layer_top { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75); color: #fff; padding: 5px; -moz-transition: all 0.4s ease-in-out 0s; -webkit-transition: all 0.4s ease-in-out 0s; -ms-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s; } .img_hoverbox:hover .hvrbox-layer_top, .img_hoverbox.active .hvrbox-layer_top { opacity: 1; } .img_hoverbox .hvrbox-text { text-align: center; font-size: 18px; display: inline-block; position: absolute; top: 50%; left: 50%; width: 90%; -moz-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } .img_hoverbox .hvrbox-text p { text-align: justify; font-size: 14px !important; line-height: 18px !important;} .img_hoverbox a { color: inherit; } .img_hoverbox a:hover { color: inherit; text-decoration: none; } .img_hoverbox .hvrbox-text_mobile { font-size: 15px; border-top: 1px solid rgb(179, 179, 179); border-top: 1px solid rgba(179, 179, 179, 0.7); margin-top: 5px; padding-top: 2px; display: none; } .img_hoverbox.active .hvrbox-text_mobile { display: block; }
 
 div.hrvbox-text p {
   text-align: left;
@@ -312,7 +304,6 @@ div.hrvbox-text p {
 #Interests div.albums_container img {
     max-width: calc(20% - 5px);
     padding: 2.5px;
-    xxpadding: 0;
 }
 #Interests div.albums_container img:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px;
